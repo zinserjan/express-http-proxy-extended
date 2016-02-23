@@ -1,0 +1,43 @@
+{
+  "name": "express-http-proxy-extended",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "files": [
+    "*.md",
+    "src",
+    "lib"
+  ],
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "npm run clean && babel ./src -d lib",
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zinserjan/express-http-proxy-extended.git"
+  },
+  "keywords": [
+    "express",
+    "proxy"
+  ],
+  "author": "Jan-André Zinser",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zinserjan/express-http-proxy-extended/issues"
+  },
+  "homepage": "https://github.com/zinserjan/express-http-proxy-extended#readme",
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-eslint": "^4.1.8",
+    "babel-plugin-add-module-exports": "^0.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.5.0",
+    "babel-preset-es2015": "^6.5.0",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^5.0.1",
+    "rimraf": "^2.5.2"
+  },
+  "dependencies": {
+    "express-http-proxy": "0.6.0"
+  }
+}
